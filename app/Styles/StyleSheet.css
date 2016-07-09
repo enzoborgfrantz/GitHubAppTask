@@ -1,0 +1,32 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Century Gothic';
+}
+#divContainer {
+  padding: 0px;
+  text-align: center;
+  align-content: center;
+}
+#divTop {
+  background-color: #100f0f;
+  padding: 25px;
+  height: 190px;
+  color: white;
+}
+#divBottom {
+  padding-top: 15px;
+  font-size: 18px;
+}
+h1 {
+  margin: 0px;
+  text-decoration: underline;
+}
+#txtUserName {
+  width: 250px;
+  margin: 0 auto;
+}
+#btnSearch {
+  margin-top: 10px;
+  width: 250px;
+}

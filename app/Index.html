@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>GitHub App</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Styles/StyleSheet.css" rel="stylesheet" />
+</head>
+<body ng-app="gitHubModule">
+    <div id="divContainer" ng-controller="gitHubController">
+        <div id="divTop">
+            <h1>The GitHub App</h1>
+            <br />
+            <input type="text" required class="form-control" id="txtUserName" ng-model="input.userName" placeholder="Enter a Github User Name" />
+            <button type="button" class="btn btn-info" id="btnSearch" ng-click="get(input.userName)">Search</button>
+        </div>
+        <div id="divBottom">
+            <div ng-repeat="rep in repos">
+                <repository repos="rep"></repository>
+            </div>
+            {{errorMessage}}
+        </div>
+    </div>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controller.js"></script>
+    <script src="directives.js"></script>
+    <script src="service.js"></script>
+</body>
+</html>
